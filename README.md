@@ -55,7 +55,7 @@ flowchart LR
     end
     
     subgraph Output
-        D[Statistically Significant<br/>Recommendations p < 0.01]
+        D["Statistically Significant<br/>Recommendations p &lt; 0.01"]
     end
     
     A --> B --> C1 & C2 & C3 --> D
@@ -524,7 +524,7 @@ graph LR
     subgraph Online["⚡ Online (Fast Lookup)"]
         C --> D[Memory-Mapped Read]
         D --> E[O(1) Lookup]
-        E --> F[< 20ms Response]
+        E --> F["&lt; 20ms Response"]
     end
     
     style Offline fill:#ffcdd2
