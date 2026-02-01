@@ -524,7 +524,7 @@ flowchart LR
     subgraph Online["⚡ Online (Fast Lookup)"]
         C --> D[Memory-Mapped Read]
         D --> E[O(1) Lookup]
-        E --> F["&lt; 20ms Response"]
+        E --> F["< 20ms Response"]
     end
     
     style Offline fill:#ffcdd2
