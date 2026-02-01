@@ -79,7 +79,7 @@ flowchart LR
 ### End-to-End Data Flow
 
 ```mermaid
-graph TD
+flowchart TD
     subgraph Data_Layer["📦 Data Layer (Polars/Rust)"]
         RAW[(Raw Submissions)] -->|data_loader.py| PARQUET[submissions.parquet]
         PARQUET -->|compute_features.py| USER_FEAT[user_features.parquet]
@@ -142,7 +142,7 @@ sequenceDiagram
 ### Backend Stack
 
 ```mermaid
-graph LR
+flowchart LR
     subgraph Python_Layer["Python 3.9+"]
         FASTAPI[FastAPI<br/>Async REST API]
         PYDANTIC[Pydantic<br/>Data Validation]
@@ -485,7 +485,7 @@ app.add_middleware(
 ### Component Hierarchy
 
 ```mermaid
-graph TD
+flowchart TD
     APP[App.jsx] --> NAV[Navigation]
     APP --> ROUTES[React Router]
     
@@ -515,7 +515,7 @@ graph TD
 ### Why This Architecture Scales
 
 ```mermaid
-graph LR
+flowchart LR
     subgraph Offline["⏰ Offline (Heavy Compute)"]
         A[100M Submissions] --> B[Causal Inference]
         B --> C[Parquet Artifacts]
