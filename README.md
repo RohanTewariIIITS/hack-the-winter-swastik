@@ -514,7 +514,7 @@ flowchart TD
 
 ### Why This Architecture Scales
 
-```mermaid
+
 flowchart LR
     subgraph Offline["⏰ Offline (Heavy Compute)"]
         A[100M Submissions] --> B[Causal Inference]
@@ -529,7 +529,7 @@ flowchart LR
     
     style Offline fill:#ffcdd2
     style Online fill:#c8e6c9
-```
+
 
 ### Performance Benchmarks
 
